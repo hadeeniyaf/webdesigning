@@ -1,0 +1,24 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+h1{
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+}
+p{
+    color: aliceblue;
+    width: 800px;
+    height: 500px;
+    line-height: 20px;
+}
+img{
+    width: 275px;
+    height: 350px;
+    margin-left: 900px;
+    margin-top: -450px;
+    border-radius: 10px;
+}
