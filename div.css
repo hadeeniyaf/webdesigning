@@ -11,7 +11,8 @@ h1{
 }
 p{
     color: aliceblue;
-    width: 800px;
+    margin-left: 10%;
+    width: 700px;
     height: 500px;
     line-height: 20px;
 }
@@ -22,3 +23,4 @@ img{
     margin-top: -450px;
     border-radius: 10px;
 }
+
