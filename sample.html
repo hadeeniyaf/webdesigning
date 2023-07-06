@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Fill All</h1>
+    <label for="">enter a number</label>
+    <input type="text" placeholder="enter value" id="no"><br><br>
+    <button id="prime" onclick="prime()" >click here</button>
+    <button id="factorial" onclick="factorial()">clich here</button>
+    <script>
+        function prime(){
+            let n = document.getElementById("no").value
+            let f=1;
+            for (i=2; i<n; i++)
+            {
+                if (n%i ==0)
+                {
+                    p=false
+                }
+
+            }
+            document.write(p)
+        }
+        function factorial(){
+            let n = document.getElementById("no").value
+            let p = true
+            for (i = 1;i<=n;i++)
+       {
+        f = f* i;
+       }
+       document.write(f);
+
+        }
+    </script>
+</body>
+</html>
