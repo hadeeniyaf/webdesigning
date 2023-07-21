@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #options{
+      background-color: aqua;
+    }
+    .quiz-container {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .question {
+      font-weight: bold;
+    }
+
+    .options label {
+      display: block;
+    }
+
+    .result {
+      margin-top: 10px;
+    }
+
+    .result.Correct {
+      color: green;
+    }
+
+    .result.Incorrect {
+      color: red;
+    }
+  </style>
+<body>
+    <h1>Quiz</h1>
+    <div id="question">who is the GOAT in football?</div>
+    <div id="options">
+        <input type="radio" name="option" id="O1">
+        <label>Messi</label><br>
+        <input type="radio" name="option" id="O2">
+        <label>Ibrahimovic</label><br>
+        <input type="radio" name="option" id="O3">
+        <label>Ronaldo</label><br>
+        <input type="radio" name="option" id="O3">
+        <label>Neymar</label><br>
+
+    </div>
+    <button onclick="checkAnswer()">Submit</button>
+    <div id="result"></div>
+  </div>
+
+    <script>
+     
+        function checkAnswer()
+    {
+      var ans1 = document.querySelector("input[id ='O1']").checked ;
+      var ans2 = document.querySelector("input[id ='O2']").checked ;
+      var ans3 = document.querySelector("input[id ='O3']").checked ;
+      var ans4 = document.querySelector("input[id ='O4']").checked ;
+    if (ans1)
+    {
+      document.getElementById("result").style.color = "green";
+      document.getElementById("result").innerText = "Correct"
+    }
+    else{
+      document.getElementById("result").style.color = "red";
+      document.getElementById("result").innerText = "Incorrect"
+    }
+
+    }
+
+    </script>
+    
+</body>
+</html>

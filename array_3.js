@@ -5,7 +5,7 @@ console.log("array after shift: ",nos);
 nos.unshift(6);
 console.log("array after unshift: ",nos);
 let arr= [1, 2, 3, 4, 5, 6];
-arr.splice(2,2);
+arr.splice(3,2);
 console.log("array after splice: ",arr);
 arr.splice(1,0,2);
 console.log("array after 2nd splice: ",arr);
