@@ -6,21 +6,27 @@
     <title>Document</title>
     <style>
         .banner{
-            width: 100px;
-            height: 50px;
+            width: 500px;
+            height: 350px;
             background-color: black;
+            transition: .5s;
         }
     </style>
 </head>
 <body>
-    <div id="banner"></div>
+    <div class="banner" id="banner"></div>
     <script>
         const d = document.getElementById("banner");
         function mouseOver()
         {
-            d.style.backgroundColor= "red";
+            banner.style.backgroundColor= "red";
         }
-        d.addEventListener("mouseover",mouseOver)
+        function mouseOut()
+        {
+            banner.style.backgroundColor="black";
+        }
+        banner.addEventListener("mouseover",mouseOver)
+        banner.addEventListener("mouseout",mouseOut)
     </script>
 </body>
 </html>
